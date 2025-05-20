@@ -445,6 +445,9 @@ form input,form textarea{
 .footer-links ul li a:hover {
   color: #ff004f;
 }
+.container nav i{
+    display: none;
+}
 
 /* small screeen */
 @media only screen and  (max-width: 600px){
@@ -457,5 +460,54 @@ form input,form textarea{
     }
     .header-text h1{
         font-size: 20px;
+    }
+    .container nav i{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul i{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 25px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
     }
 }
